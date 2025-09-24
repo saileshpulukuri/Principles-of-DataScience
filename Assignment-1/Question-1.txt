@@ -1,0 +1,37 @@
+1. 1) Frailty is physical weakness; lack of health or strength. Reduced grip strength in females
+correlated with higher frailty scores and vice versa. Hand grip strength can be quantified by
+measuring the amount of static force that the hand can squeeze around a dynamometer. The
+force has most commonly been measured in kilograms and pounds. The table below represents
+data from 10 female participants. The Height is measured in inches, Weight in pounds, Age in
+years, Grip strength in kilograms. Frailty is qualitative attribute indicated the presence or
+absence of the symptoms. (10 points)
+Height Weight Age Grip strength Frailty
+65.8 112 30 30 N
+71.5 136 19 31 N
+69.4 153 45 29 N
+68.2 142 22 28 Y
+67.8 144 29 24 Y
+68.7 123 50 26 N
+69.8 141 51 22 Y
+70.1 136 23 20 Y
+67.9 112 17 19 N
+66.8 120 39 31 N
+Based on the following table, you must design AND implement a three‑stage workflow (ingest
+→ process → analyze) with code and organized outputs. (reference study case in chapter
+3). You need to save the raw data in csv file and read it into a pandas data frame and then
+perform the following:
+a. Unit standardization
+i. Height_m = Height_in * 0.0254
+ii. Weight_kg = Weight_lb * 0.45359237
+b. Feature engineering
+i. BMI = Weight_kg / (Height_m ** 2) (round to 2 decimals).
+ii. AgeGroup (categorical): "<30", "30–45", "46–60", ">60" based on Age_yr.
+c. Categorical → numeric encoding
+i. Binary encoding: Frailty_binary (Y→1, N→0, store as int8).
+ii. One‑hot encode AgeGroup into columns: AgeGroup_<30, AgeGroup_30–45,
+AgeGroup_46–60, AgeGroup_>60
+d. EDA & Reporting
+I. Compute summary table: mean/median/std for numeric columns; save to
+reports/findings.md .
+II. Quantify relation of strength ↔ frailty: compute correlation between Grip_kg
+and Frailty_binary, and report it.
