@@ -1,5 +1,6 @@
-# Findings 
+# Findings
 
+## Summary 
 |                |      mean |    median |        std |
 |:---------------|----------:|----------:|-----------:|
 | Height_in      |  68.6     |  68.45    |  1.67066   |
@@ -11,4 +12,5 @@
 | BMI            |  19.682   |  19.185   |  1.78097   |
 | Frailty_binary |   0.4     |   0       |  0.516398  |
 
-Correlation between Grip_kg and Frailty_binary: -0.45333950359163006
+## Correlation 
+Correlation between Grip_kg and Frailty_binary: -0.453
