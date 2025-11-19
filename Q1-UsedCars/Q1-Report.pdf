@@ -1,0 +1,1 @@
+I chose to impute missing values instead of dropping rows because the dataset is large (5847 entries). Dropping would cause unnecessary data loss, while median/mode imputation preserves central tendencies and minimizes distortion.
